@@ -12,17 +12,17 @@ import { useState, useEffect } from 'react';
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  useEffect(() => {
-    if (
-      localStorage.theme === 'dark' ||
-      (!('theme' in localStorage) &&
-        window.matchMedia('(prefees-color-scheme: dark)').matches)
-    ) {
-      setIsDarkMode(true);
-    } else {
-      setIsDarkMode(false);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (
+  //     localStorage.theme === 'dark' ||
+  //     (!('theme' in localStorage) &&
+  //       window.matchMedia('(prefees-color-scheme: dark)').matches)
+  //   ) {
+  //     setIsDarkMode(true);
+  //   } else {
+  //     setIsDarkMode(false);
+  //   }
+  // }, []);
 
   useEffect(() => {
     if (isDarkMode) {
