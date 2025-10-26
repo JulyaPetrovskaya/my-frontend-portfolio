@@ -98,8 +98,13 @@ const Contact = ({ isDarkMode }) => {
             type='text'
             placeholder='Enter your name'
             required
-            className={`flex-1 p-3 outline-none border-[0.5px] rounded-md ${inputThemeClasses}`}
             name='name'
+            className={`flex-1 p-3 outline-none border-[0.5px] rounded-md'
+             ${
+              isDarkMode
+                ? 'bg-dark-hover/30 border-white/90'
+                : 'bg-white border-gray-400'
+            }`}
           />
           <motion.input
             initial={{ opacity: 0, x: 50 }}
@@ -108,8 +113,13 @@ const Contact = ({ isDarkMode }) => {
             type='email'
             placeholder='Enter your email'
             required
-            className={`flex-1 p-3 outline-none border-[0.5px] rounded-md ${inputThemeClasses}`}
             name='email'
+            className={`flex-1 p-3 outline-none border-[0.5px] rounded-md'
+            ${
+              isDarkMode
+                ? 'bg-dark-hover/30 border-white/90'
+                : 'bg-white border-gray-400'
+            }`}
           />
         </div>
         <motion.textarea
@@ -119,12 +129,13 @@ const Contact = ({ isDarkMode }) => {
           rows='6'
           placeholder='Enter your message'
           required
-          className={`w-full p-4 outline-none border-[0.5px] rounded-md mb-6 ${
+          name='message'
+          className={`w-full p-4 outline-none border-[0.5px] rounded-md mb-6'
+           ${
             isDarkMode
               ? 'bg-dark-hover/30 border-white/90'
               : 'bg-white border-gray-400'
           }`}
-          name='message'
         ></motion.textarea>
 
         <motion.button
