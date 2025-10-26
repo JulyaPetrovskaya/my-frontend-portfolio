@@ -22,7 +22,7 @@ export const metadata = {
     siteName: 'Portfolio - Julya Petrovska',
     images: [
       {
-        url: 'https://my-frontend-portfolio-julya-petrovska.vercel.app/social-preview.jpg',
+        url: 'https://my-frontend-portfolio-julya-petrovska.vercel.app/social-preview.png',
         width: 1200,
         height: 630,
         alt: 'Julya Petrovska Portfolio Preview',
