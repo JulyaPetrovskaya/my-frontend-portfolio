@@ -45,11 +45,9 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-6 flex items-center justify-between z-50 ${
           isScrolled
             ? isDarkMode
-              ? 'bg-dark-theme shadow-white/20'
+              ? 'bg-dark-theme/90 shadow-white/20'
               : 'bg-[rgb(255_255_255/0.5)] backdrop-blur-lg shadow-sm'
-            : isDarkMode
-              ? 'bg-dark-theme'
-              : ''
+            : ''
         }`}
       >
         <a href='#top'>
