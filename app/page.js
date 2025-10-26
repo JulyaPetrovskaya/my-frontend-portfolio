@@ -12,25 +12,21 @@ import { useState, useEffect } from 'react';
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // useEffect(() => {
-  //   if (
-  //     localStorage.theme === 'dark' ||
-  //     (!('theme' in localStorage) &&
-  //       window.matchMedia('(prefees-color-scheme: dark)').matches)
-  //   ) {
-  //     setIsDarkMode(true);
-  //   } else {
-  //     setIsDarkMode(false);
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (localStorage.theme === 'dark') {
+      setIsDarkMode(true);
+    } else {
+      setIsDarkMode(false);
+    }
+  }, []);
 
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
-      localStorage.theam = 'dark';
+      localStorage.theme = 'dark';
     } else {
       document.documentElement.classList.remove('dark');
-      localStorage.theam = '';
+      localStorage.theme = '';
     }
   }, [isDarkMode]);
 
@@ -41,7 +37,7 @@ export default function Home() {
       <About isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Services isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Work isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Contact isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+      <Contact isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Footer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
     </>
   );
