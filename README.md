@@ -6,7 +6,7 @@
 
 | Назва | Посилання |
 | :--- | :--- |
-| **Демонстрація (Live Demo)** | [ПОСИЛАННЯ] |
+| **Демонстрація (Live Demo)** | [https://my-frontend-portfolio-julya-petrovska.vercel.app/] |
 
 ## ✨ Ключові Особливості
 
