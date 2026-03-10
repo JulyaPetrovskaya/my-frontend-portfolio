@@ -53,7 +53,7 @@ import redux_icon from './redux-icon.png';
 import github from './github-icon.svg';
 import telegram from './telegram.svg';
 import linkedIn from './linkedin-icon.svg';
-import github_dark from './github-icon_dark.svg'
+import github_dark from './github-icon_dark.svg';
 
 export const assets = {
   github_dark,
@@ -117,8 +117,18 @@ export const assets = {
 export const workData = [
   {
     name: 'React',
+    title: 'Wings of help',
+    description:
+      'React-based volunteer platform where users can create help requests and respond with offers. Implemented authentication flow, request filtering, and status management. Integrated frontend with REST API and added multilingual support (EN/UA)',
+    bgImage: '/work-7.png',
+    url: 'https://volunteer-site-placeholder-dev.up.railway.app/',
+    github: 'https://github.com/wings-of-help/volunteer-site-placeholder',
+  },
+  {
+    name: 'React',
     title: 'Phone Catalog',
-    description: 'Responsive E-commerce UI with dynamic filtering and URL state preservation.',
+    description:
+      'Responsive E-commerce UI with dynamic filtering and URL state preservation.',
     bgImage: '/work-1.png',
     url: 'https://julyapetrovskaya.github.io/phone-catalog/',
     github: 'https://github.com/JulyaPetrovskaya/phone-catalog',
@@ -126,43 +136,47 @@ export const workData = [
   {
     name: 'Landing Page',
     title: 'Dia agency',
-    description: 'A modern landing page implemented for a Strategic Agency concept.',
-    bgImage: '/work-2.png', 
+    description:
+      'A modern landing page implemented for a Strategic Agency concept.',
+    bgImage: '/work-2.png',
     url: 'https://julyapetrovskaya.github.io/Dia-landing',
-    github:'https://github.com/JulyaPetrovskaya/Dia-landing',
+    github: 'https://github.com/JulyaPetrovskaya/Dia-landing',
   },
   {
     name: 'Landing Page',
     title: 'The-Met Museum',
-    description:'A dedicated landing page UI for The Metropolitan Museum of Art.',
+    description:
+      'A dedicated landing page UI for The Metropolitan Museum of Art.',
     bgImage: '/work-3.png',
     url: 'https://julyapetrovskaya.github.io/The-Met-landing',
     github: 'https://github.com/JulyaPetrovskaya/The-Met-landing',
-    
   },
   {
     name: 'JS Logic',
     title: '2048 Game',
-    description:'A pure JavaScript implementation showcasing game logic, event handling, and DOM manipulation.',
+    description:
+      'A pure JavaScript implementation showcasing game logic, event handling, and DOM manipulation.',
     bgImage: '/work-4.png',
     url: 'https://julyapetrovskaya.github.io/js_2048_game/',
     github: 'https://github.com/JulyaPetrovskaya/js-2048-game',
   },
   {
-    name: 'Business Card',
-    title: 'Astrologic',
-    description:'Informational website developed for astrologer Olga Dzhumanova. Built using HTML5, CSS3, and JavaScript, the site provides a clean interface for viewing services and booking consultations.',
-    bgImage: '/work-5.png',
-    url: 'https://julyapetrovskaya.github.io/astrologic/',
-    github: 'https://github.com/JulyaPetrovskaya/astrologic',
-  },
-    {
     name: 'Angular App',
     title: 'To do list',
-    description:'A simple and responsive todo list application built with Angular 15. Users can add, delete, and mark tasks as completed.All tasks are stored in local storage, so they persist between sessions.',
+    description:
+      'A simple and responsive todo list application built with Angular 15. Users can add, delete, and mark tasks as completed.All tasks are stored in local storage, so they persist between sessions.',
     bgImage: '/work-6.png',
     url: 'https://julyapetrovskaya.github.io/angular-todo-app',
     github: 'https://github.com/JulyaPetrovskaya/angular-todo',
+  },
+  {
+    name: 'Business Card',
+    title: 'Astrologic',
+    description:
+      'Informational website developed for astrologer Olga Dzhumanova. Built using HTML5, CSS3, and JavaScript, the site provides a clean interface for viewing services and booking consultations.',
+    bgImage: '/work-5.png',
+    url: 'https://julyapetrovskaya.github.io/astrologic/',
+    github: 'https://github.com/JulyaPetrovskaya/astrologic',
   },
 ];
 

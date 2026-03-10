@@ -10,7 +10,7 @@ const Work = ({ isDarkMode }) => {
   const [showAll, setShowAll] = useState(false);
 
   //4 елемента бачимо за замовчуванням
-  const itemsToShow = showAll ? workData.length : 4;
+  const itemsToShow = showAll ? workData.length : 5;
   const displayedWork = workData.slice(0, itemsToShow);
 
   // чи потрібна нам кнопка "Show more"
