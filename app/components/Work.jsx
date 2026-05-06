@@ -10,7 +10,7 @@ const Work = ({ isDarkMode }) => {
   const [showAll, setShowAll] = useState(false);
 
   //4 елемента бачимо за замовчуванням
-  const itemsToShow = showAll ? workData.length : 5;
+  const itemsToShow = showAll ? workData.length : 6;
   const displayedWork = workData.slice(0, itemsToShow);
 
   // чи потрібна нам кнопка "Show more"
@@ -96,17 +96,27 @@ const Work = ({ isDarkMode }) => {
               </div>
             </Link>
 
-            <Link
-              href={project.github}
-              target='_blank'
-              rel='noopener noreferrer'
-              title={project.description}
-              className={`flex items-center justify-center w-full mt-8 gap-3 px-8 py-2 border border-gray-500 rounded-full font-Ovo ${
-                isDarkMode ? 'hover:bg-dark-hover' : 'hover:bg-gray-100'
-              } transition-colors`}
-            >
-              Github code
-            </Link>
+            {project.isPrivate ? (
+              <div
+                className={`flex items-center justify-center w-full mt-8 gap-3 px-8 py-2 border border-gray-300 text-gray-500 rounded-full font-Ovo cursor-default ${
+                  isDarkMode ? 'bg-dark-hover' : ''
+                }`}
+              >
+                Commercial Project
+              </div>
+            ) : (
+              <Link
+                href={project.github}
+                target='_blank'
+                rel='noopener noreferrer'
+                title={project.description}
+                className={`flex items-center justify-center w-full mt-8 gap-3 px-8 py-2 border border-gray-500 rounded-full font-Ovo ${
+                  isDarkMode ? 'hover:bg-dark-hover' : 'hover:bg-gray-100'
+                } transition-colors`}
+              >
+                Github code
+              </Link>
+            )}
           </motion.div>
         ))}
       </motion.div>

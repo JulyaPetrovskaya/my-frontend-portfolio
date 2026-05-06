@@ -124,6 +124,15 @@ export const workData = [
     url: 'https://volunteer-site-placeholder-dev.up.railway.app/',
     github: 'https://github.com/wings-of-help/volunteer-site-placeholder',
   },
+    {
+    name: 'React',
+    title: 'VID Franko',
+    description:
+      'Responsive commercial website for a door company with interactive UI, reusable React components, and adaptive layouts.',
+    bgImage: '/work-8.png',
+    url: 'https://www.vidfranko.com.ua/',
+    isPrivate: true,
+  },
   {
     name: 'React',
     title: 'Phone Catalog',
