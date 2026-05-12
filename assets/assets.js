@@ -130,7 +130,7 @@ export const workData = [
     description:
       'Responsive commercial website for a door company with interactive UI, reusable React components, and adaptive layouts.',
     bgImage: '/work-8.png',
-    url: 'https://www.vidfranko.com.ua/',
+    url: 'https://vidfranko.com.ua/',
     isPrivate: true,
   },
   {
